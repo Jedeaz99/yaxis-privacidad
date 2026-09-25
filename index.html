@@ -81,7 +81,7 @@
 <header>
   <p class="brand">Yaxis</p>
   <h1>Política de Privacidad</h1>
-  <p class="meta">Última actualización: 22 de septiembre de 2026</p>
+  <p class="meta">Última actualización: 24 de septiembre de 2026</p>
 </header>
 
 <p>Yaxis es una aplicación para estudiantes de la Facultad de Ciencias Exactas y
@@ -168,15 +168,31 @@ la universidad.</p>
   <li><strong>Sugerencias estudiantiles:</strong> el texto de la sugerencia que
       escribís y la categoría que elegís. Tu sugerencia se muestra de forma
       anónima al resto de los estudiantes: nadie más ve quién la escribió.
-      Internamente sí queda registrado quién la envió, y solo pueden verlo los
-      administradores de Yaxis, para poder actuar si alguien usa el buzón para
-      agredir o abusar de la función.</li>
+      Internamente sí queda registrado quién la envió, pero ese registro no lo
+      puede leer nadie, tampoco los administradores: sirve para poder actuar
+      si alguien usa el buzón para agredir o abusar de la función.</li>
   <li><strong>Ideas para Yaxis:</strong> el texto de la idea que escribís y la
       categoría que elegís. Se publica de inmediato y de forma anónima: el
       resto de los estudiantes no ve quién la escribió. Internamente sí queda
-      registrado quién la envió, y solo pueden verlo los administradores de
-      Yaxis, para poder actuar si alguien usa la función para agredir o abusar
-      de ella.</li>
+      registrado quién la envió, pero ese registro no lo puede leer nadie,
+      tampoco los administradores: sirve para poder actuar si alguien usa la
+      función para agredir o abusar de ella.</li>
+  <li><strong>Encuestas estudiantiles:</strong> si creás una encuesta, guardamos
+      la pregunta, las opciones que escribís y a quién va dirigida (todas las
+      carreras o solo la tuya). Antes de publicarse pasa por la revisión de un
+      administrador. Si votás, guardamos que <em>ya votaste</em> en esa
+      encuesta, para que no se pueda votar dos veces, pero <strong>no qué
+      opción elegiste</strong>: el voto solo suma uno al total de esa
+      opción.</li>
+  <li><strong>FaCEN Virtual:</strong> si conectás tu calendario de FaCEN Virtual
+      (la plataforma Moodle de la facultad), pegás en la app el enlace de
+      exportación que genera tu propia cuenta. Ese enlace se guarda
+      <strong>solo en tu teléfono</strong>, nunca en nuestros servidores, y
+      Yaxis nunca te pide tu contraseña de FaCEN Virtual. Con él, la app lee
+      tus fechas de entregas y exámenes —también de vez en cuando con la app
+      cerrada, para avisarte si hay algo nuevo o si cambió una fecha— y las
+      suma a tu calendario, donde quedan como el resto de tus datos
+      académicos.</li>
 </ul>
 
 <h2>Qué NO recogemos</h2>
@@ -208,7 +224,7 @@ servidor le respondería que no.</p>
 administrar la app: tu nombre, tu alias, tu correo, tu carrera y tu plan, si te
 ofreciste como tutor, y la fecha en que te registraste.</p>
 
-<p>Y hay tres casos puntuales donde ve algo más, siempre por un motivo
+<p>Y hay dos casos puntuales donde ve algo más, siempre por un motivo
 concreto:</p>
 
 <ul>
@@ -234,6 +250,21 @@ quien venga.</p>
 <p>Un administrador puede ocultar una sugerencia, descartar una idea,
 aprobarla o suspender a quien la escribió, y en ningún momento el servidor le
 dice de quién se trata.</p>
+
+<h2>Quién puede ver que una encuesta es tuya y qué votaste</h2>
+
+<div class="note">
+  <p><strong>Nadie.</strong> Tampoco los administradores.</p>
+</div>
+
+<p>Quién creó una encuesta se guarda en un registro aparte que ninguna cuenta
+puede leer, igual que en el buzón y las ideas para Yaxis: sirve para que vos
+reconozcas tu encuesta y para poder actuar si alguien la usa para agredir.</p>
+
+<p>Lo que votaste no se guarda en ningún lado. Queda registrado que votaste en
+esa encuesta, y la opción que elegiste suma uno a su total, pero no existe
+ninguna forma de unir las dos cosas: ni un administrador ni nosotros podemos
+saber qué eligió cada persona.</p>
 
 <h2>Quién puede ver que una reseña de materia es tuya</h2>
 
@@ -286,8 +317,10 @@ te llegan. La otra persona no se entera.</p>
   <li>Mostrarte tu avance en la carrera y tus estadísticas.</li>
   <li>Guardar tu progreso para que no lo pierdas si cambiás de teléfono.</li>
   <li>Enviarte recordatorios y avisar cuando cambia la fecha de un examen.</li>
-  <li>Hacer funcionar las tutorías, el modo estudio, las peticiones y la feria,
-      si las usás.</li>
+  <li>Hacer funcionar las tutorías, el modo estudio, las peticiones, las
+      encuestas y la feria, si las usás.</li>
+  <li>Sumar a tu calendario las fechas de FaCEN Virtual y avisarte de cambios,
+      si lo conectaste.</li>
 </ul>
 
 <p>No tomamos decisiones automatizadas sobre vos ni elaboramos perfiles con fines
@@ -324,6 +357,17 @@ necesarios para que la app funcione:</p>
       <td>Entrega de notificaciones en iPhone</td>
       <td>El identificador del dispositivo y el texto del aviso</td>
     </tr>
+    <tr>
+      <td>FaCEN Virtual (Moodle de la facultad)</td>
+      <td>Leer tu calendario, solo si lo conectaste</td>
+      <td>La consulta de tu teléfono con tu enlace de calendario; no recibe
+          nada de Yaxis</td>
+    </tr>
+    <tr>
+      <td>Sitio web de FACEN (facen.una.py)</td>
+      <td>Formularios de Trámites y noticias oficiales</td>
+      <td>Una consulta normal a su página pública, sin datos tuyos</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -337,6 +381,10 @@ datos se procesen allí.</p>
 de Supabase para que puedas recuperarlos desde otro dispositivo.</p>
 
 <p>Se conservan mientras tu cuenta exista. Si la eliminás, se borran.</p>
+
+<p>El enlace de tu calendario de FaCEN Virtual es la excepción: vive solo en tu
+teléfono. Se borra cuando tocás <em>Desconectar</em> o cuando desinstalás la
+app.</p>
 
 <p>Hay una excepción, y es más corta: los <strong>productos del día</strong> de la
 feria se borran solos. Dejan de mostrarse al final del día y se eliminan de la
@@ -368,6 +416,13 @@ cuenta, con todo lo que hubieras cargado en ellos.</p>
 fueron tuyas y también tus apoyos a las sugerencias o ideas de otros. El texto
 de una sugerencia o idea ya publicada puede seguir visible, pero deja de
 existir cualquier forma de vincularla con vos.</p>
+
+<p>Si creaste encuestas, se borra el registro de que fueron tuyas y también el
+de las encuestas en las que votaste. Una encuesta ya publicada y los votos que
+sumó pueden seguir visibles, pero sin ninguna forma de vincularlos con vos.</p>
+
+<p>Las fechas que llegaron de FaCEN Virtual se borran junto con tu
+calendario.</p>
 
 <p>Si dejaste reseñas de materias, se eliminan por completo: calificación,
 comentario, nombre de docente y etiquetas incluidos. A diferencia de las
